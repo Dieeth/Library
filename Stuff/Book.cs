@@ -7,16 +7,24 @@ using System.Threading.Tasks;
 
 namespace Libraria.Stuff
 {
-    internal class Book
+    public class Book
     {
         [Key]
         public int Id { get; set; }
         public string Title { get; set; } = null!;
-        public DateTime YearPublished { get; set; }
-        
-        public Author Author { get; set; } = null!;
-        public Genre Genre { get; set; } = null!;
+        public string YearPublished { get; set; }
+        public string Author { get; set; } = null!;
+        public string Genre { get; set; } = null!;
 
         public enum Status { NotRead, ReadingInProcess, Read }
+
+        public Book(string title, string yearpublished, string author, string genre)
+        {
+            Title = title;
+            YearPublished = yearpublished;
+            Author = author;
+            Genre = genre;
+        }
+        public Book() { }
     }
 }

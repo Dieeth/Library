@@ -10,5 +10,12 @@ namespace Libraria
         {
             InitializeComponent();
         }
+
+        private void AddWindow(object? sender, RoutedEventArgs e)
+        {
+            var AddBookWindow = new AddBook();
+
+            AddBookWindow.Show();
+        }
     }
 }

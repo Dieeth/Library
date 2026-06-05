@@ -12,9 +12,5 @@ namespace Libraria.Stuff
         [Key]
         public int Id { get; set; }
         public string Name { get; set; } = null!;
-        public DateTime BirthDate { get; set; }
-        public DateTime? DeathDate { get; set; }
-
-        public ICollection<Book> Books { get; set; } = null!;
     }
 }

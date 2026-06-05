@@ -1,0 +1,17 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Libraria.AddBook"
+        Title="AddBook">
+    <StackPanel>
+        <TextBlock Text="Add a new book!" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="30" Margin="10" FontFamily="Comic sans MS"/>
+        <TextBox Width="300" Watermark="Book's title here..." Name="TitleBox" Margin="10"/>
+        <TextBox Width="300" Watermark="Book's year of publishing here..." Name="YearPublishedBox"/>
+        <TextBox Width="300" Watermark="Book's author here..." Name="AuthorBox" Margin="10"/>
+        <TextBox Width="300" Watermark="Book's genre here..." Name="GenreBox"/>
+
+        <Button Content="Add!" HorizontalAlignment="Center" Margin="30" FontSize="30" Click="NewBook"/>
+    </StackPanel>
+</Window>
