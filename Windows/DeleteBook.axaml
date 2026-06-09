@@ -1,0 +1,19 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Libraria.DeleteBook"
+        Title="DeleteBook">
+    <StackPanel>
+        <TextBlock Name="Title" Text="Delete book" HorizontalAlignment="Center" FontFamily="Chiller" VerticalAlignment="Top" FontSize="50" Margin="20"/>
+        <TextBox Width="300" Name="Textbox" Watermark="Book's title here..."/>
+        <Button HorizontalAlignment="Center" Margin="20" Content="Delete!" Click="EnsureDeletion"/>
+
+        <TextBlock Text="Are you sure?" HorizontalAlignment="Center" IsVisible="False" Name="a"/>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Yes" Click="Delete" IsEnabled="False" FontFamily="Chiller" FontSize="30" Margin="10" IsVisible="False" Name="b"/>
+            <Button Content="No" Click="Escape" IsEnabled="False" FontFamily="Comic sans MS" FontSize="25" Margin="10" IsVisible="False" Name="c"/>
+        </StackPanel>
+    </StackPanel>
+</Window>

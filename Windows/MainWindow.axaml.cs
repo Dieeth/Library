@@ -17,5 +17,24 @@ namespace Libraria
 
             AddBookWindow.Show();
         }
+        private void SearchWindow(object? sender, RoutedEventArgs e)
+        {
+            var SearchBookWindow = new SearchBook();
+
+            SearchBookWindow.Show();
+        }
+        private void DeleteWindow(object? sender, RoutedEventArgs e)
+        {
+            var DeleteBookWindow = new DeleteBook();
+
+            DeleteBookWindow.Show();
+        }
+
+        private void EditWindow(object? sender, RoutedEventArgs e)
+        {
+            var EditBookWindow = new EditBook();
+
+            EditBookWindow.Show();
+        }
     }
 }

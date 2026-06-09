@@ -5,5 +5,11 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Libraria.MainWindow"
         Title="Libraria">
-    <Button Content="New book" Click="AddWindow"/>
+    <StackPanel>
+        <TextBlock Text="Library" HorizontalAlignment="Center" FontSize="50" Margin="40"/>
+        <Button Content="New book" Click="AddWindow" HorizontalAlignment="Center"/>
+        <Button Content="Search book" Click="SearchWindow" HorizontalAlignment="Center" Margin="10"/>
+        <Button Content="Delete book" Click="DeleteWindow" HorizontalAlignment="Center"/>
+        <Button Content="Edit book" Click="EditWindow" HorizontalAlignment="Center" Margin="10"/>
+    </StackPanel>
 </Window>

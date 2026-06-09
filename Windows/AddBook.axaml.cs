@@ -30,6 +30,13 @@ namespace Libraria
 
                 context.books.Add(new Book(TitleBox.Text, YearPublishedBox.Text, AuthorBox.Text, GenreBox.Text));
                 context.SaveChanges();
+
+                TitleBox.Text = null;
+                YearPublishedBox.Text = null;
+                AuthorBox.Text = null;
+                GenreBox.Text = null;
+
+
             }
         }
     }
