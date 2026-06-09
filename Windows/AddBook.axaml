@@ -13,5 +13,6 @@
         <TextBox Width="300" Watermark="Book's genre here..." Name="GenreBox"/>
 
         <Button Content="Add!" HorizontalAlignment="Center" Margin="30" FontSize="30" Click="NewBook"/>
+        <TextBlock Text="" HorizontalAlignment="Center" FontSize="30" Name="Reminder" FontFamily="Chiller"/>
     </StackPanel>
 </Window>

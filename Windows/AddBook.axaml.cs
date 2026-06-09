@@ -2,6 +2,7 @@ using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Libraria.Data;
 using Libraria.Stuff;
+using System;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Libraria 
@@ -14,10 +15,22 @@ namespace Libraria
         }
         private void NewBook(object? sender, RoutedEventArgs e)
         {
-            LibraryContext context = new LibraryContext();
+            if (TitleBox.Text == null || YearPublishedBox.Text == null || AuthorBox.Text == null || GenreBox.Text == null)
+            {
+                Reminder.Text = "All text poles should be filled.";
 
-            context.books.Add(new Book(TitleBox.Text, YearPublishedBox.Text, AuthorBox.Text, GenreBox.Text));
-            context.SaveChanges();
+                TitleBox.Text = null;
+                YearPublishedBox.Text = null;
+                AuthorBox.Text = null;
+                GenreBox.Text = null;
+            }
+            else
+            {
+                LibraryContext context = new LibraryContext();
+
+                context.books.Add(new Book(TitleBox.Text, YearPublishedBox.Text, AuthorBox.Text, GenreBox.Text));
+                context.SaveChanges();
+            }
         }
     }
 }
