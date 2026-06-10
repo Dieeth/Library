@@ -1,5 +1,8 @@
 using Avalonia.Controls;
 using Avalonia.Interactivity;
+using Libraria.Data;
+using System.Data.SqlClient;
+using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 
 namespace Libraria
@@ -9,6 +12,9 @@ namespace Libraria
         public MainWindow()
         {
             InitializeComponent();
+
+            LibraryContext context = new LibraryContext();
+            context.Database.EnsureCreated();
         }
 
         private void AddWindow(object? sender, RoutedEventArgs e)

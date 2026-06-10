@@ -5,5 +5,15 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="Libraria.EditBook"
         Title="EditBook">
-  Welcome to Avalonia!
+    <StackPanel>
+        <TextBlock Name="txt" Text="Edit book" FontSize="30" Margin="10" FontFamily="Comic sans MS" HorizontalAlignment="Center"/>
+        <TextBox Width="300" Watermark="Title of a book you want to edit" Name="EditBookBox"/>
+        <Button Click="Button_Click" Content="Edit this book" HorizontalAlignment="Center" Margin="10"/>
+        
+        <TextBox Width="300" Name="TitleEdit" Watermark="Edit title" IsVisible="False"/>
+        <TextBox Width="300" Name="AuthorEdit" Watermark="Edit author" IsVisible="False" Margin="10"/>
+        <TextBox Width="300" Name="YearEdit" Watermark="Edit release year" IsVisible="False"/>
+        <TextBox Width="300" Name="GenreEdit" Watermark="Edit genre" IsVisible="False" Margin="10"/>
+        <Button HorizontalAlignment="Center" Click="EditButton_Click" Name="EditButton" Content="Edit" IsVisible="False" FontSize="30"/>
+    </StackPanel>
 </Window>
