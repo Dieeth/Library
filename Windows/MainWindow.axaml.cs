@@ -42,5 +42,12 @@ namespace Libraria
 
             EditBookWindow.Show();
         }
+
+        private void AllBooksWindow(object? sender, RoutedEventArgs e)
+        {
+            var AllBooksWindow = new AllBooks();
+
+            AllBooksWindow.Show();
+        }
     }
 }

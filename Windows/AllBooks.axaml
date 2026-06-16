@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="Libraria.AllBooks"
+        Title="AllBooks">
+        <StackPanel>
+            <TextBlock Text="All books" Margin="10" FontSize="30" HorizontalAlignment="Center"/>
+
+            <StackPanel Name="AllBooksPole" HorizontalAlignment="Center">
+            </StackPanel>
+
+            <StackPanel>
+                <Button Content="No sort" Margin="10" Click="NoSort"/>
+                <Button Content="Recent books" Margin="10" Click="RecentBooks"/>
+                <Button Content="Oldest books" Margin="10" Click="OldestBooks"/>
+                <Button Content="Sort by title" Margin="10" Click="AlphabetSort"/>
+            </StackPanel>
+            
+        </StackPanel>
+</Window>

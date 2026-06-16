@@ -11,5 +11,6 @@
         <Button Content="Search book" Click="SearchWindow" HorizontalAlignment="Center" Margin="10"/>
         <Button Content="Delete book" Click="DeleteWindow" HorizontalAlignment="Center"/>
         <Button Content="Edit book" Click="EditWindow" HorizontalAlignment="Center" Margin="10"/>
+        <Button Content="All books" Click="AllBooksWindow" HorizontalAlignment="Center"/>
     </StackPanel>
 </Window>
